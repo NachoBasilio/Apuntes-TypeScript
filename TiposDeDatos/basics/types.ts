@@ -29,3 +29,12 @@ type responseType = string | number
 let variasValores2 : responseType
 variasValores2 = 'hola'
 variasValores2 = 1
+
+
+//type ASSERTIONS
+
+let message: any = 'hello world'
+
+let messageUpperCase = (message as string).toUpperCase()
+
+let messageUpperCase2 = (<string>message).toUpperCase()
