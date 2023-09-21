@@ -44,3 +44,19 @@ let person4: Person = {
     sayHi: () => 'Hi',
     printHi: () => console.log('Hi')
 }
+
+interface Employee extends Person {
+    id: number;
+    department: string;
+}
+
+let employee: Employee = {
+    name: 'John',
+    age: 30,
+    charge: 'Frontend Developer',
+    isDeveloper: true, 
+    salary: 1000,
+    printHi: () => console.log('Hi'),
+    id: 1,
+    department: 'IT'
+}
