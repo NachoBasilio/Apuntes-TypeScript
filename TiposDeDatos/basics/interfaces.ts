@@ -1,0 +1,46 @@
+interface Person {
+    name: string;
+    age: number | string;
+    charge: string;
+    isDeveloper: boolean;
+    salary?: number;// Opcional
+    sayHi?: () => string;// Opcional
+    printHi: () => void;
+}
+
+let person: Person = {
+    name: 'John',
+    age: 30,
+    charge: 'Frontend Developer',
+    isDeveloper: true,
+    salary: 1000,
+    printHi: () => console.log('Hi')
+}
+
+person.age = '30 años';
+
+let person2: Person = {
+    name: 'Jane',
+    age: '30 años',
+    charge: 'Backend Developer',
+    isDeveloper: true,
+    printHi: () => console.log('Hi')
+}
+
+let person3: Person = {
+    name: 'John',
+    age: 30,
+    charge: 'Frontend Developer',
+    isDeveloper: true,
+    salary: 1000,
+    printHi: () => console.log('Hi')
+}
+
+let person4: Person = {
+    name: 'Jane',
+    age: '30 años',
+    charge: 'Backend Developer',
+    isDeveloper: true,
+    sayHi: () => 'Hi',
+    printHi: () => console.log('Hi')
+}
