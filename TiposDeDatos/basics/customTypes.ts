@@ -21,3 +21,13 @@ let response: serviceResponse
 type UserCharge = "Admin" | "User" | "Guest";
 
 let myUser: UserCharge = "Admin";
+
+type user = Persona & {charge: UserCharge};
+
+let myUser2: user = {
+    name: "Juan",
+    age: 25,
+    isMarried: false,
+    address: "Calle 123",
+    charge: "Admin"
+}
