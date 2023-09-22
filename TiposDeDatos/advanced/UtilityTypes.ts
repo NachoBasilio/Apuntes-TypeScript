@@ -53,3 +53,6 @@ interface Todo {
 
 type TodoPreview = Pick<Todo, "title" | "completed">;//"title" | "completed"
 
+//Omit<T,K>
+
+type TodoPreview2 = Omit<Todo, "description">;//"title" | "completed"
