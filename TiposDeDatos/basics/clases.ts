@@ -24,3 +24,23 @@ class Dog extends Animal {
         console.log("Woof")
     }
 }
+
+
+//Interfaces vs Clases
+
+//Las clases me construyen objetos y podemos tener dentro de ellas propiedades y métodos
+//Las clases se puede extender 
+
+class petClass{
+    seyHi(){
+        console.log("Hi")
+    }
+}
+
+interface petInterface{
+    sayHi: () => void
+}
+
+class Cat extends petClass{
+}
+//Extender no me obliga a implementar los métodos de la clase padre

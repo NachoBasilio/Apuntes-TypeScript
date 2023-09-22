@@ -60,3 +60,28 @@ let employee: Employee = {
     id: 1,
     department: 'IT'
 }
+
+
+
+//Interfaces vs Clases
+
+//las interfaces son solo un contrato esquelético
+//Las interfaces no se pueden interpretar en JS
+
+
+class petClass{
+    seyHi(){
+        console.log("Hi")
+    }
+}
+
+interface petInterface{
+    sayHi: () => void
+}
+
+class Dog implements petInterface{
+    sayHi(){
+        console.log("Woof")
+    }
+}
+//Implementar me obliga a implementar los métodos de la interfaz
