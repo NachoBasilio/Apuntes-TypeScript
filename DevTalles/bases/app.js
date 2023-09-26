@@ -1,1 +1,2 @@
-var msg = "Hola mundo";
+"use strict";
+let msg = "Hola mundo";
