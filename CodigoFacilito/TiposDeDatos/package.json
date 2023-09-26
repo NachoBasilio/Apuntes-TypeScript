@@ -1,0 +1,21 @@
+{
+  "name": "configuraciondeentornodetrabajo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:types": "tsc basics/types.ts --outdir dist/ && node dist/types.js",
+    "start:enums": "tsc basics/enums.ts --outdir dist/ && node dist/enums.js",
+    "start:interfaces": "tsc basics/interfaces.ts --outdir dist/ && node dist/interfaces.js",
+    "start:customTypes": "tsc basics/customTypes.ts --outdir dist/ && node dist/customTypes.js",
+    "start:clases": "tsc basics/clases.ts --outdir dist/ && node dist/clases.js",
+    "start:funciones": "tsc basics/funciones.ts --outdir dist/ && node dist/funciones.js",
+    "start:namespace": "tsc advanced/namespaces.ts --outFile dist/namespace.js && node dist/namespace.js",
+    "start:namespaces": "tsc advanced/namespaces.ts advanced/index.ts --outFile dist/namespaces.js && node dist/namespaces.js"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
