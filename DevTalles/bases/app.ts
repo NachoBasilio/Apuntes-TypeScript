@@ -1,1 +1,3 @@
-let msg = "Hola mundo"
+(()=>{
+
+})()
