@@ -9,7 +9,7 @@
     //let myFunction:(a:string) => string; recibe solo funciones que reciban un string y devuelvan un string
     //let myFunction:() => string; recibe solo funciones que no reciban nada y devuelvan un string
 
-    let myFunction:Function
+    let myFunction:Function;
 
     myFunction = addNumber;
 
