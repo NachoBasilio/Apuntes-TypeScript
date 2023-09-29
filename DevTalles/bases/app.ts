@@ -22,10 +22,10 @@
       Superman = 100
     }
     
-    const fuerzaFlash = Fuerza.Flash
-    const fuerzaSuperman = Fuerza.Superman
-    const fuerzaBatman = Fuerza.Batman
-    const fuerzaAcuaman = Fuerza.Acuaman
+    const fuerzaFlash:Fuerza = Fuerza.Flash
+    const fuerzaSuperman:Fuerza = Fuerza.Superman
+    const fuerzaBatman:Fuerza = Fuerza.Batman
+    const fuerzaAcuaman:Fuerza = Fuerza.Acuaman
 
     // Retorno de funciones
     function activar_batiseñal():string{
@@ -43,5 +43,3 @@
   
   
   })()
-  
-  
