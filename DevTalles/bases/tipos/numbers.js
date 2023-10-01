@@ -11,3 +11,4 @@
     }
     avengers = Number('55A'); //NaN es un tipo de dato number
 })();
+//# sourceMappingURL=numbers.js.map

@@ -7,3 +7,4 @@
     console.log(nulo);
     console.log(indefinido);
 })();
+//# sourceMappingURL=NullyUndefined.js.map

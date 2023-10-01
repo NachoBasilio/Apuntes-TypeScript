@@ -15,3 +15,4 @@
     myFunction = salvarMundo;
     console.log(myFunction());
 })();
+//# sourceMappingURL=function-types.js.map

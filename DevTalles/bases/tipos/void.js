@@ -11,3 +11,4 @@
         console.log('Show Superman signal');
     };
 })();
+//# sourceMappingURL=void.js.map

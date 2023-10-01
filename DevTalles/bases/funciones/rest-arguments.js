@@ -11,3 +11,4 @@
     var ironman = fullName('Anthony', 'Edward', 'Tony', 'Stark');
     console.log({ superman: superman, ironman: ironman });
 })();
+//# sourceMappingURL=rest-arguments.js.map

@@ -11,3 +11,4 @@
     var currentAudio = AudioLevel.medium;
     console.log(currentAudio); //1
 })();
+//# sourceMappingURL=enums.js.map

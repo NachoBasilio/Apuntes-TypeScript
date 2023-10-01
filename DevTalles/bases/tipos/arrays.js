@@ -5,3 +5,4 @@
     var strings = ['a', 'b', 'c', 'd', 'e'];
     var strings2 = ['a', 'b', 'c', 'd', 'e'];
 })();
+//# sourceMappingURL=arrays.js.map

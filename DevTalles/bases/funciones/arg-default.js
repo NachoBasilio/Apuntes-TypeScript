@@ -12,3 +12,4 @@
     var name = fullName('Tony');
     console.log({ name: name });
 })();
+//# sourceMappingURL=arg-default.js.map

@@ -12,3 +12,4 @@
     }; //Podemos definir esto de esta manera pero imaginemos que los dos objetos deben tener la misma firma, esto es un poco tedioso, para solucionar esto, podemos crear una interfaz
     //En typescript cuando definimos un objetos, luego si queremos editar sus propiedades, no podemos hacerlo, ya que typescript lo toma como un objeto inmutable, para solucionar esto, debemos definir las propiedades como opcionales, para que luego podamos editarlas
 })();
+//# sourceMappingURL=objets.js.map
