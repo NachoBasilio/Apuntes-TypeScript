@@ -23,6 +23,30 @@ var __rest = (this && this.__rest) || function (s, e) {
         console.log(arquero, resto);
     };
     printPlayers(riverPlateJugadores);
+    const jugadoresArr = ['Armani', 'Gonzales Pires', 'Enzo Perez', 'Borja'];
+    const [arqueroArr, defensaArr, medioArr, delanteroArr] = jugadoresArr;
+    console.log(arqueroArr, defensaArr, medioArr, delanteroArr);
+})();
+(() => {
+    const pityMartinez = {
+        name: 'Gonzalo Pity Martinez',
+        salary: 1000000,
+        active: true
+    };
+    const juanferQuintero = {
+        name: 'Juan Fernando Quintero',
+        salary: 500000,
+        active: false
+    };
+    const enzoPerez = {
+        name: 'Enzo Perez',
+        salary: 800000,
+        active: true
+    };
+    const riverPlayers = [pityMartinez, juanferQuintero, enzoPerez];
+    for (const player of riverPlayers) {
+        console.log(player.name);
+    }
 })();
 (() => {
     let river = "campeon";

@@ -22,4 +22,12 @@
     }
 
     printPlayers(riverPlateJugadores)
+
+
+    const jugadoresArr = ['Armani', 'Gonzales Pires', 'Enzo Perez', 'Borja']
+
+    const [arqueroArr, defensaArr, medioArr, delanteroArr] = jugadoresArr;
+
+    console.log(arqueroArr, defensaArr, medioArr, delanteroArr)
+
 })()
