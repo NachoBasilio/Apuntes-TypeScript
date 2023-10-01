@@ -1,14 +1,20 @@
 (()=>{
-    let flash ={
+    let flash: {nombre:string, edad?:number, poderes:string[] } ={//Definimos el tipo de dato que va a tener el objeto
         nombre: 'Barry Allen',
         edad: 24,
         poderes: ['Puede correr muy rápido', 'Viajar en el tiempo']
     }
 
+
+    
+
     flash = {
         nombre: 'Clark Kent',
         edad: 500,
-        poderes: ['Puede volar']
+        poderes: ['Puede volar'],
+        getNombre(){
+             return this.nombre;
+         }
     }
 
 

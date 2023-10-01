@@ -8,7 +8,10 @@
     flash = {
         nombre: 'Clark Kent',
         edad: 500,
-        poderes: ['Puede volar']
+        poderes: ['Puede volar'],
+        getNombre: function () {
+            return this.nombre;
+        }
     };
     //En typescript cuando definimos un objetos, luego si queremos editar sus propiedades, no podemos hacerlo, ya que typescript lo toma como un objeto inmutable, para solucionar esto, debemos definir las propiedades como opcionales, para que luego podamos editarlas
 })();
