@@ -9,7 +9,16 @@
             this.club = club;
         }
     }
-    const Franccecoli = new RiverPlatePlayer('Enzo Franccecoli', 45, 'Midfielder', 3, "River Plate");
+    class MediocampistasDeRiver extends RiverPlatePlayer {
+        constructor(name, age, position, goals) {
+            super(name, age, position, goals);
+            this.name = name;
+            this.age = age;
+            this.position = position;
+            this.goals = goals;
+        }
+    }
+    const MarceloGallardo = new MediocampistasDeRiver('Marcelo Gallardo', 45, 'Midfielder', 3);
 })();
 (() => {
 })();
