@@ -1,5 +1,17 @@
 "use strict";
 (() => {
+    class RiverPlatePlayer {
+        constructor(name, age, position, goals, club = 'River Plate') {
+            this.name = name;
+            this.age = age;
+            this.position = position;
+            this.goals = goals;
+            this.club = club;
+        }
+    }
+    const Franccecoli = new RiverPlatePlayer('Enzo Franccecoli', 45, 'Midfielder', 3, "River Plate");
+})();
+(() => {
 })();
 (() => {
     class FutbolPlayer {
@@ -10,6 +22,12 @@
         }
         getNameAndEge() {
             return `${this.name} - ${this.age}`;
+        }
+        get getNameAndEgePublic() {
+            return `${this.name} - ${this.age}`;
+        }
+        set setNameAndEgePublic(name) {
+            this.name = name;
         }
     }
     class RiverPlatePlayer extends FutbolPlayer {

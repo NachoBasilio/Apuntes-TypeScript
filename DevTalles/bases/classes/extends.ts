@@ -9,6 +9,12 @@
         protected getNameAndEge(): string{//Protected es como private pero se puede acceder desde las clases que heredan, private no se puede acceder desde las clases que heredan
             return `${this.name} - ${this.age}`;
         }
+        get getNameAndEgePublic(): string{//Los getters nos deben devolver algo, no pueden ser void
+            return `${this.name} - ${this.age}`;
+        }
+        set setNameAndEgePublic(name: string){// Los setters no deben devolver nada, deben ser void y nos ayudan a modificar el valor de una propiedad
+            this.name = name;
+        }
     }
 
     class RiverPlatePlayer extends FutbolPlayer {
