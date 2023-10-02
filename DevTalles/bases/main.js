@@ -8,8 +8,11 @@
             this.goals = goals;
             this.club = club;
         }
+        bio() {
+            return `${this.name} has scored ${this.goals} goals`;
+        }
     }
     const player = new RiverPlatePlayer('Juanfer', 27, 'Midfielder', 3, "Racing");
-    console.log(player);
+    console.log(player.bio());
 })();
 //# sourceMappingURL=main.js.map
