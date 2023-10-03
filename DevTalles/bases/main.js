@@ -37,4 +37,8 @@
         years: [20, 21]
     });
 })();
+(() => {
+    const addNumbersFunction = (a, b) => a + b;
+    addNumbersFunction(1, 2);
+})();
 //# sourceMappingURL=main.js.map
