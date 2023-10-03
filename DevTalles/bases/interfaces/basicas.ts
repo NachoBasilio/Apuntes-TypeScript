@@ -12,6 +12,7 @@
         //     years: number[]
         // } Esto no es recomendable, ya que no es una buena practica y dificulta la lectura del codigo
         history: history;
+        getHistory?: () => string;//El signo de interrogacion hace que el metodo sea opcional
     }//Los tipos no pueden extenderse, las interfaces si
 
     interface history{//Las interfaces secundarias debajo de la principal, se pueden usar en la principal
@@ -33,6 +34,12 @@
             return this.salary;
         }
     }
+
+    const messi = new Player('Messi', 33, 'Barcelona', 1000000, true, 'Delantero', {
+        clubes: ['Barcelona', 'PSG'],
+        years: [20, 21]
+    })
+
 
 
 })()

@@ -14,5 +14,9 @@
             return this.salary;
         }
     }
+    const messi = new Player('Messi', 33, 'Barcelona', 1000000, true, 'Delantero', {
+        clubes: ['Barcelona', 'PSG'],
+        years: [20, 21]
+    });
 })();
 //# sourceMappingURL=main.js.map
