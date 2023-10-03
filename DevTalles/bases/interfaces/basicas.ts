@@ -20,7 +20,23 @@
         years: number[]
     }
 
-    class Player implements FutbolPlayer{
+    const messiLiteral: FutbolPlayer = {//Se puede usar la interfaz como un tipo de dato
+        name: 'Messi',
+        age: 33,
+        club: 'Barcelona',
+        salary: 1000000,
+        playing: true,
+        position: 'Delantero',
+        getSalary(){
+            return this.salary;
+        },
+        history: {
+            clubes: ['Barcelona', 'PSG'],
+            years: [20, 21]
+        }
+    }
+
+    class Player implements FutbolPlayer{//Tambien se puede usar la interfaz como una clase
         constructor(
             public name: string,
             public age: number,
@@ -32,6 +48,9 @@
         ){}
         getSalary(){
             return this.salary;
+        }
+        getHistory(){
+            return `${this.name} ha jugado en ${this.history.clubes.length} clubes`
         }
     }
 

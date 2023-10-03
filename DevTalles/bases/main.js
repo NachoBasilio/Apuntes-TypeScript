@@ -1,5 +1,20 @@
 "use strict";
 (() => {
+    const messiLiteral = {
+        name: 'Messi',
+        age: 33,
+        club: 'Barcelona',
+        salary: 1000000,
+        playing: true,
+        position: 'Delantero',
+        getSalary() {
+            return this.salary;
+        },
+        history: {
+            clubes: ['Barcelona', 'PSG'],
+            years: [20, 21]
+        }
+    };
     class Player {
         constructor(name, age, club, salary, playing, position, history) {
             this.name = name;
@@ -12,6 +27,9 @@
         }
         getSalary() {
             return this.salary;
+        }
+        getHistory() {
+            return `${this.name} ha jugado en ${this.history.clubes.length} clubes`;
         }
     }
     const messi = new Player('Messi', 33, 'Barcelona', 1000000, true, 'Delantero', {
