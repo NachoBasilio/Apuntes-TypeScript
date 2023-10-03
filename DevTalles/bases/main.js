@@ -54,4 +54,28 @@
     }
     const MarceloGallardo = new RiverPlatePlayer('Marcelo Gallardo', 45, 'Midfielder', 3, "River Plate");
 });
+(() => {
+    class RiverPlateDT {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        static createDT(name, age) {
+            if (age < 18) {
+                throw new Error('El DT debe ser mayor de edad');
+            }
+            if (!RiverPlateDT.instance) {
+                RiverPlateDT.instance = new RiverPlateDT(name, age);
+            }
+            return RiverPlateDT.instance;
+        }
+        changeName(name) {
+            this.name = name;
+        }
+    }
+    const dt = RiverPlateDT.createDT('Marcelo Gallardo', 45);
+    console.log(dt);
+    dt.changeName('Napoleon');
+    console.log(dt);
+})();
 //# sourceMappingURL=main.js.map
