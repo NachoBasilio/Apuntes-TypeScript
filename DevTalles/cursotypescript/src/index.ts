@@ -1,10 +1,5 @@
-import { getPokemon } from "./generics/getPokemon";
+import { Pokemon } from "./decorators/pokemon-class";
 
-getPokemon(2)
-    .then((pokemon) => {
-    console.log(pokemon.name);
-    })
-    .catch((error) => {
-    console.log(error);
-    })
-    .finally(() => console.log("Pokemon Promise Finished"));
+const charmander = new Pokemon('Charmander', 'Fire');
+
+
