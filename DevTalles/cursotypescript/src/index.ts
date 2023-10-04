@@ -1,10 +1,5 @@
-import { Hero } from "./classes/Hero";
+import { printObject, genericFunction } from "./generics/generics";
 
-console.log('Hola Mundo!');
+printObject({ name: "John", age: 30 })//Una funcion generica es una funcion que puede aceptar cualquier tipo de dato
 
-
-
-
-const ironMan = new Hero("Tony Start", 100, 6);
-
-console.log(ironMan.power);
+console.log(genericFunction("Hello World"));//TypeScript va a reaccionar al tipo de lo que mandemos, no como si no tuvieramos el tipado generico
