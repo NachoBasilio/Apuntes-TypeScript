@@ -5,3 +5,8 @@ export const printObject = (argument: any) => {
 export function genericFunction<T>(argumento: T):T{
     return argumento;
 }
+
+
+export const genericFunctionArrow = <T>(argumento: T):T => {
+    return argumento;
+}
