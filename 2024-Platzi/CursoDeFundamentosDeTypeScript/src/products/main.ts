@@ -13,7 +13,6 @@ agregadoraDeProductos({
   tamaño: "M"
 })
 
-
 agregadoraDeProductos({
   titulo: "Remera de Dragon Ball",
   fecha: new Date(),

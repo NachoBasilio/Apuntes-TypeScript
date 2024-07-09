@@ -10,10 +10,13 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@eslint/js": "^9.6.0",
-    "eslint": "^9.6.0",
+    "@types/lodash": "^4.17.6",
     "globals": "^15.8.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^7.15.0"
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "lodash": "^4.17.21"
   }
 }
