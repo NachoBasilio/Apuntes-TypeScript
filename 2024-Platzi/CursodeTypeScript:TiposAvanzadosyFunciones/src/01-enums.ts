@@ -1,10 +1,10 @@
-enum ROLES {
+export enum ROLES {
   ADMIN = "admin",
   VENDEDOR = "vendedor",
   USUARIO = "usuario"
 }
 
-type User = {
+export type User = {
   username: string;
   rol: ROLES
 }
