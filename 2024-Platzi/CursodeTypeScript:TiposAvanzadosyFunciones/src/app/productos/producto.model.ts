@@ -4,8 +4,14 @@ import { BaseModel } from "../base.model";
 export type Sizes = "S" | "M" | "L" | "XL"
 
 export interface Producto extends BaseModel {
-  title: string;
+  titulo: string;
+  imagen: string;
+  descripcion: string;
+  color: string;
+  precio: number;
   stock: number;
-  size?: Sizes;
-  categoria:Categoria//Esto es un subObjeto
+  tamaño?: Sizes;
+  categoria:Categoria;//Esto es un subObjeto
+  esNuevo: boolean;
+  tags: string[];
 }
