@@ -7,3 +7,16 @@ export interface CreateProductDto extends Omit<Producto, "id" | "createdAt" | "u
 
 
 type example = Pick<Producto, "color" | "descripcion"> //El contrario de omit
+
+
+export interface UpdateProductDto extends Partial<CreateProductDto> {
+
+} //Me da la opcion de que todos los campos sean opcionales
+
+
+type example2 = Required<Producto> //Deja todo como obligatorio
+
+
+export interface FindProductDto extends Readonly<Partial<Omit<Producto, "tags">>> {
+  tags: ReadonlyArray<string>
+}

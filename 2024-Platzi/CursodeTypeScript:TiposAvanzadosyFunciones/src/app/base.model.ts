@@ -1,5 +1,5 @@
 export interface BaseModel {
-  readonly id: string | number; //No se puede sobree scribir
+  readonly id: number | string; //No se puede sobre escribir
   readonly createdAt: Date;
   updatedAt: Date;
 }

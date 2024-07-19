@@ -1,5 +1,5 @@
 import { Producto } from "./producto.model"
-import { CreateProductDto } from "./producto.dto"
+import { CreateProductDto, FindProductDto, UpdateProductDto } from "./producto.dto"
 import { faker } from "@faker-js/faker"
 
 export const productos: Producto[] = []
@@ -23,8 +23,17 @@ export const addProduct = (data: CreateProductDto) => {
 }
 
 
-export const updateProduct = (id:string, changes: CreateProductDto) => {
+export const updateProduct = (id:Producto["id"], changes: UpdateProductDto): Producto => {//Asi siempre va a respetar el tipo
+  const index = productos.findIndex(item => item.id === id)
 
+  const prevData = productos[index]
+
+  productos[index] = {
+    ...prevData,
+    ...changes
+  }
+
+  return productos[index]
 }
 
 export const deleteProduct = (id:string) => {
@@ -34,3 +43,13 @@ export const deleteProduct = (id:string) => {
 export const findOneProduct = (id:string) => {
 
 }
+
+export const findProducts = (dto: FindProductDto): Producto[] => {
+
+  //Code
+  //Aqui dentro deberiamos respetar los parametros de busqueda, por ende todo lo que llegue tiene que ser readonly
+
+  // dto.tags?.push("asasd")//Me deja si no es readOnly
+  return productos
+}
+
